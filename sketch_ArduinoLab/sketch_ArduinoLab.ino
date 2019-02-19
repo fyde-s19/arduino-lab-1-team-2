@@ -1,4 +1,4 @@
-// Lab 1
+// Lab 1 - timed blink
 // Sai, Amitesh, Fawaz, Rishabh
 // Team 2
 
@@ -16,4 +16,6 @@ void timedBlink(int interval){
 void loop() {
   // put your main code here, to run repeatedly:
   timedBlink(1); //varies how long the LED is on in seconds
+  //timedBlink(2);
+  //timedBlink(3);
 }
