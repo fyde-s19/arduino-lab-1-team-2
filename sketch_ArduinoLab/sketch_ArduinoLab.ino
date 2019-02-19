@@ -1,3 +1,7 @@
+// Lab 1
+// Sai, Amitesh, Fawaz, Rishabh
+// Team 2
+
 void setup() {
   // put your setup code here, to run once:
   pinMode(LED_BUILTIN, OUTPUT);
