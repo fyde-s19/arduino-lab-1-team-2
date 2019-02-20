@@ -17,12 +17,12 @@ void dimmer(int freq, int duty){
 void loop() {
   // put your main code here, to run repeatedly:
   int duty = 0;
-  while (duty <= 100){
-    dimmer(100, duty);
+  while (duty <= 100){  // loop to brighten
+    dimmer(100, duty);  // change frequency here
     duty++;
   }
-  while (duty >= 0){
-    dimmer(100, duty);
+  while (duty >= 0){    // loop to dim
+    dimmer(100, duty);  // change frequency here
     duty--;
   }
 }
