@@ -1,10 +1,9 @@
 void setup() {
   // put your setup code here, to run once:
   pinMode(LED_BUILTIN, OUTPUT);
-  int duty = 5;
-  int freq = 100;
-  int deltaDuty = -5;
-  int deltaFreq = 10;
+  int duty_g = 5;
+  int freq_g = 100;
+  int deltaDuty = 5;
 }
 void dimmer(int freq, int duty){
   int period. onTime, offTime;
@@ -18,14 +17,14 @@ void dimmer(int freq, int duty){
 }
 void loop() {
   // put your main code here, to run repeatedly:
-  dimmer(freq, duty);
-  if(duty==95 || duty==5){
-    deltaDuty*=-1;
+  dimmer(freq_g, duty_g);
+  while(duty_g<=freq_g){
+    dimmer(freq_g, duty_g);
+    duty_g+=deltaDuty;
   }
-  duty+=deltaDuty;
-  if(freq==100 || freq == 0){
-    deltaFreq*=-1;
+  while(duty_g>=0){
+    dimmer(freq_g, duty_g);
+    duty_g-=deltaDuty;
   }
-  freq+=deltaFreq;
 
 }
