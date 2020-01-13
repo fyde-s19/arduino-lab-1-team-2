@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="586.0" prefWidth="680.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="assignment7.ClientUICtrl">
+   <children>
+      <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="558.0" prefWidth="652.0">
+         <children>
+            <TextField id="MessageBox" fx:id="MessageBox" layoutX="28.0" layoutY="487.0" prefHeight="40.0" prefWidth="374.0" />
+            <Button id="SendButton" fx:id="SendButton" layoutX="419.0" layoutY="487.0" mnemonicParsing="false" onAction="#sendButtonHandler" prefHeight="40.0" prefWidth="66.0" text="Send" />
+            <ComboBox id="DropDown" fx:id="DropDown" layoutX="495.0" layoutY="449.0" prefWidth="150.0" />
+            <Button id="DirectMessage" fx:id="DirectMessage" layoutX="495.0" layoutY="487.0" mnemonicParsing="false" onAction="#DirectMessageHandler" prefHeight="40.0" prefWidth="150.0" text="Direct Message" />
+            <TextArea id="Chat" fx:id="Chat" layoutX="28.0" layoutY="25.0" prefHeight="452.0" prefWidth="462.0" />
+            <Label id="ChatLabel" fx:id="ChatLabel" layoutX="34.0" layoutY="5.0" prefHeight="18.0" prefWidth="168.0" text="GlobalChat" />
+            <Button id="GlobalChatButton" fx:id="GlobalChatButton" layoutX="494.0" layoutY="400.0" mnemonicParsing="false" onAction="#GlobalChatHandler" prefHeight="40.0" prefWidth="150.0" text="Global Chat" />
+            <Text fx:id="username" fill="#390ca2" layoutX="515.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+            <Text fx:id="SendError" fill="#f51818" layoutX="34.0" layoutY="549.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+         </children></AnchorPane>
+   </children>
+</AnchorPane>
